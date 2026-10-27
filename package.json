@@ -1,0 +1,15 @@
+{
+  "name": "agent-harness-kit",
+  "version": "1.0.0",
+  "description": "Harness-engineering tools for Claude Code: execution receipts, baseline-vs-candidate evals, harness-tax audits, a reasoning-routed headless adapter and a fresh-context quality judge.",
+  "type": "module",
+  "engines": { "node": ">=20.11" },
+  "scripts": {
+    "test": "node --test",
+    "eval": "node scripts/harness-eval.mjs",
+    "verify": "node scripts/harness-evidence.mjs",
+    "tax": "node scripts/harness-tax.mjs",
+    "agent:check": "node scripts/agent.mjs --self-test",
+    "agent:inspect": "node scripts/agent.mjs --inspect -p"
+  }
+}
